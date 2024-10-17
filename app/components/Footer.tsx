@@ -13,7 +13,7 @@ const Footer = () => {
             <div className='footer p-6 bg-geen-800 text-blue-900 bg-gradient-to-r from-blue-400 via-green-700 to-blue-700 '>
                 <div>
                     <Image src={footer_logo} alt='Footer Logo' width={200} height={200} className="py-2 mx-auto " />
-                    {/* <p className="font-bold text-3xl text-center p-3 m-9">SAFE HOME CHEMICALS</p> */}
+                    
                 </div>
 
                 <ul className='flex gap-6 mb-4 items-center justify-center font-bold text-blue-900'>
@@ -25,13 +25,13 @@ const Footer = () => {
 
                 <div className="flex gap-4 mb-2 justify-center">
                     <div >
-                        <Image src={facebook_icon} alt='Facebook' width={24} height={24} className='hover:scale-110 transition-transform bg-blue-900 rounded-md' />
+                        <Link href='https://www.facebook.com/profile.php?id=61565214891148&mibextid=ZbWKwL'><Image src={facebook_icon} alt='Facebook' width={24} height={24} className='hover:scale-110 transition-transform bg-blue-900 rounded-md' /></Link>
                     </div>
                     <div className="footer-icons-container">
-                       <Image src={whatsapp_icon} alt='WhatsApp' width={24} height={24} className='hover:scale-110 transition-transform bg-blue-900 rounded-md' />  
+                       <Link href="+92 320 9236102"><Image src={whatsapp_icon} alt='WhatsApp' width={24} height={24} className='hover:scale-110 transition-transform bg-blue-900 rounded-md' /></Link> 
                     </div>
                     <div className="footer-icons-container">
-                       <Image src={instagram_icon} alt='Instagram' width={24} height={24} className='hover:scale-110 transition-transform bg-blue-900 rounded-md '/>
+                       <Link href="https://www.instagram.com/safe_home_chemicals?igsh=Y3M4am9zdXZhdTR2"><Image src={instagram_icon} alt='Instagram' width={24} height={24} className='hover:scale-110 transition-transform bg-blue-900 rounded-md '/></Link>
                     </div>
                 </div>
 
