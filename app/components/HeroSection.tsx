@@ -1,10 +1,13 @@
 import React from 'react'
 import Image from 'next/image';
 import hero_section_img from '../assets/p1.jpg'
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const HeroSection = () => {
   return (
     <>
+    <Navbar />
     <div className='bg-black'>
       <div className="w-[90vw] h-[120vh] flex flex-wrap md:flex-nowrap justify-center items-center ">
 
@@ -23,6 +26,7 @@ const HeroSection = () => {
 
       </div>
       </div>
+      <Footer />
       </>
 
       );
