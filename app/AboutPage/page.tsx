@@ -1,5 +1,5 @@
 import React from "react";
-import video1 from '@/app/assets/videos/video1'
+
 
 
 
@@ -9,8 +9,11 @@ const AboutPage = () => {
       <div>
         <h1>HEXA SHIELD PRODUCTS</h1>
         <div className="w-full max-w-4xl aspect-video overflow-hidden rounded-lg shadow-lg">
-          <iframe className="w-full h-full" 
-          src="/assets/videos/video.mp4"/>
+        {/* <video src="@/app/assets/videos/video.mp4"></video> */}
+        <video width="500" controls>
+        <source src="/videos/video1.mp4" type="video/mp4" />
+      .
+      </video>
         </div>
         <p>This is the about page.</p>
         
