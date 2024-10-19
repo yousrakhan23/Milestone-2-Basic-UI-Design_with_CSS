@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Footer = () => {
     return (
         <>
-            <div className='footer p-6 bg-geen-800 text-blue-900 bg-gradient-to-r from-blue-400 via-green-700 to-blue-700 '>
+            <div className='footer bg-geen-800 text-blue-900 bg-gradient-to-r from-blue-400 via-green-700 to-blue-700 '>
                 <div>
                     <Image src={"/logo-removebg-preview.png"} alt='Footer Logo' width={200} height={200} className="py-2 mx-auto " />
                     
@@ -14,9 +14,9 @@ const Footer = () => {
 
                 <ul className='flex gap-6 mb-4 items-center justify-center font-bold text-blue-900'>
                     <li><Link href="/" className="hover:text-blue-900 text-green-950 font-extrabold text-2xl p-5">Home</Link></li>
-                    <li><Link href="/about" className="hover:text-blue-900 text-green-950 font-extrabold text-2xl p-5">About</Link></li>
-                    <li><Link href="/contact" className="hover:text-blue-900 text-green-950 font-extrabold text-2xl p-5">Contact</Link></li>
-                    <li><Link href="/service" className="hover:text-blue-900 text-green-950 font-extrabold text-2xl p-5">Services</Link></li>
+                    <li><Link href="/ProductPage" className="hover:text-blue-900 text-green-950 font-extrabold text-2xl p-5">Products</Link></li>
+                    <li><Link href="/ContactPage" className="hover:text-blue-900 text-green-950 font-extrabold text-2xl p-5">Contact</Link></li>
+                    <li><Link href="/ServicesPage" className="hover:text-blue-900 text-green-950 font-extrabold text-2xl p-5">Services</Link></li>
                 </ul>
 
                 <div className="flex gap-4 mb-2 justify-center">
