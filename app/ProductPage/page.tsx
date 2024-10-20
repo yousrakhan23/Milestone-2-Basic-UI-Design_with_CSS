@@ -2,13 +2,16 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import {products} from '../data/productData';
+// import { useEffect, useState } from 'react';
+
 
 const ProductPage = () => {
 
  const router = useRouter();
 
+
   const handleVideoClick = (id:number) => {
-    router.push(`/ProductPage/${id}`);
+    router.push(`/product/${id}`);
   }
   return (
     <>

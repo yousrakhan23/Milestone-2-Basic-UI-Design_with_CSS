@@ -8,6 +8,8 @@ const ProductPage = () => {
     const product = products.find((item) => item.id === parseInt(id as string));
     if (!product) return <p>Product not found!</p>;
     return (
+        <>
+        <div>{product.name}</div>
         <div className="w-full max-w-xl mx-auto p-8">
             <h1 className="text-2xl font-bold mb-4">{product.name}</h1>
             <video 
@@ -20,6 +22,7 @@ const ProductPage = () => {
             <p className="text-lg mb-3">Price: ${product.price}</p>
             <p className="text-lg mb-3">Price: ${product.description}</p>
         </div>
+        </>
     );
 }
 export default ProductPage;
