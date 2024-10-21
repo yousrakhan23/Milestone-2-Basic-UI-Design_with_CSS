@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import {ContextProvider} from "@/app/Context/context"
 
 
 
@@ -30,10 +31,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <ContextProvider>
         <Navbar />
         {children}
         <Footer />      
-      </body>
+        </ContextProvider>
+        </body>
       
     </html>
   );
