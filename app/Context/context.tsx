@@ -5,7 +5,7 @@ import  {createContext, ReactNode,  useContext,useState, } from "react"
 
 type ContextValue={
     data:any;
-    setData:(data:any) => void,
+    setData:(data:any) => any,
     products:any
 }
 
