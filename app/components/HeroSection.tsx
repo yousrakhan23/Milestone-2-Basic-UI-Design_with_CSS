@@ -17,7 +17,7 @@ const HeroSection = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-6 lg:w-1/2 mt-10 lg:mt-0 relative ">
-          <Image src={"/p1.jpg"} alt="hero-img" width={500} height={500} className="transition-transform duration-600 hover:translate-x-5 hover:-translate-y-5 rounded-lg border-spacing-0.5 bg-blue-900 shadow-lg  object-cover p-4 mx-auto max-w-xs flex-1 flex justify-end shadow-green-950 bg-gradient-to-r from-green-900 via-blue-900 to-green-900 " />
+          <Image src={"/p1.jpg"} alt="hero-img" width={500} height={500} className="transition transform duration-600 ease-in hover:scale-125 rounded-lg border-spacing-0.5 bg-blue-900 shadow-lg  object-cover p-4 mx-auto max-w-xs flex-1 flex justify-end shadow-green-950 bg-gradient-to-r from-green-900 via-blue-900 to-green-900 " />
 
         </div>
 

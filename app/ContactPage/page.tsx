@@ -32,7 +32,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className='p-2 w-full flex justify-center'>
-                  <button className='inline-flex text-white bg-gradient-to-r from-blue-400 via-green-700 to-blue-700 border-0 py-2 px-8 focus:outline-none rounded-full text-lg'>Submit your comment</button>
+                  <button className='inline-flex text-white bg-gradient-to-r from-blue-400 via-green-700 to-blue-700 border-0 py-2 px-8 focus:outline-none rounded-full text-sm transition-transform duration-300 hover:scale-105 '>Submit your comment</button>
                 </div>
                 <span className='inline-flex'></span>
                 <div className='flex justify-center items-center text-center w-full font-extrabold transition-transform duration-500 hover:translate-x-5 hover:text-green-700 cursor-pointer'>
