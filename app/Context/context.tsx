@@ -5,7 +5,8 @@ import  {createContext, ReactNode,  useContext,useState, } from "react"
 
 type ContextValue={
     data:any;
-    setData:(data:any) => void
+    setData:(data:any) => void,
+    products:any
 }
 
 const Context = createContext<ContextValue | undefined>(undefined)
@@ -14,14 +15,14 @@ export function useDataContext (){
     if (!ContextValue) throw new Error ("Context must be used within a Provider");
     return ContextValue
 }
-const ContextProvider = ({children}:{children:ReactNode}) =>{
+ export const ContextProvider: React.FC<{children:ReactNode}> = ({children}) =>{
 
-    const [data, setData] = useState(products)
+    const [data, setData] = useState(products[0])
     return (
-        <Context.Provider value={{data, setData}}>
+        <Context.Provider value={{products,data, setData}}>
             {children}
         </Context.Provider>
     )
 }
 
-export default {ContextProvider,Context}
+export default {Context}
