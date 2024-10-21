@@ -2,11 +2,11 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div >
+    <div className='min-h-screen flex items-center justify-center px-4' >
      
-      <div className='flex items-start flex-col gap-2 w-[700px] mt-6 px-2 m-11 mx-auto text-black bg-blue-900 bg-opacity-100 rounded-full'>
+      <div className='flex items-start flex-col gap-4 w-[700px] mt-6 px-2 m-11 mx-auto text-black bg-blue-900 bg-opacity-100 rounded-full'>
         <section className='text-black relative'>
-          <div className='container px-6 py-5 mx-auto w-full'>
+          <div className='container  px-9 py-12 mx-auto w-full mb-4'>
             <div className='flex flex-col text-center w-full mt-1'>
               <p className=' text-sm font-bold mb-2 text-white justify-center text-center transition-transform duration-500 hover:translate-y-5 hover:text-green-700 cursor-pointer'></p>
             </div>

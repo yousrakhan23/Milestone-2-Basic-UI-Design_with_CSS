@@ -4,11 +4,10 @@ import HeroSection from './components/HeroSection';
 const page = () => {
   return (
     <div>
-    
-    <HeroSection />
+      <HeroSection />
     </div>
-  
+
   )
 }
 
-export default page
+export default page;

@@ -5,13 +5,9 @@ const ProductPage = () => {
 
      const {data}=useDataContext()
      console.log(data)
-    // const router = useRouter();
-    // const {id} = router.query;
-    // const product = products.find((item) => item.id === parseInt(id as string));
-    // if (!product) return <p>Product not found!</p>;
     return (
         <>
-        {/* <div>{data.name}</div> */}
+        
         <div className="w-full max-w-4xl mx-auto p-5">
         <div className="flex flex-col md:flex-row gap-x-8 items-start">
         <div className="w-full md:w-1/2">
