@@ -25,4 +25,4 @@ export function useDataContext (){
     )
 }
 
-export default {Context}
+export default Context;
