@@ -18,14 +18,14 @@ const handleVideoClick = (id:number) => {
         </h1>
         
         <div className="w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 p-4">
-          {products.map((product) => (
-            <Link href={"/ProductPage/productDescription"} onClick={()=> setData(products[product.id])}>
+          {products.map((item) => (
+            <Link href={"/ProductPage/productDescription"} onClick={()=> setData(products[item.id])}>
             <video 
             
-            key={product.id}
+            key={item.id}
             onClick={() => {
               
-              handleVideoClick(product.id)
+              handleVideoClick(item.id)
               
             }}
             className="cursor-pointer w-full h-auto rounded-lg transition-transform duration-200 hover:-translate-y-1/4 hover:-translate-z-5 border-spacing-0.5 bg-blue-900 shadow-lg object-cover p-4 mx-auto max-w-xs flex-1 flex justify-end shadow-green-950 bg-gradient-to-r from-green-900 via-blue-900 to-green-900"
@@ -33,7 +33,7 @@ const handleVideoClick = (id:number) => {
             autoPlay
             loop
             >
-              <source src={product.video} type="video/mp4" />
+              <source src={item.video} type="video/mp4" />
             </video>
             
               </Link>
