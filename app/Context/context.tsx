@@ -6,7 +6,7 @@ import  {createContext, ReactNode,  useContext,useState, } from "react"
 type ContextValue={
     data:{id:number ; name:string ; price:number ; description:string ; video:string};
     setData:(data:{id:number ; name:string ; price:number ; description:string ; video:string}) => void,
-    products:any
+    products: { id: number; name: string; description: string; price: number; video: string }[]
 }
 
 const Context = createContext<ContextValue | undefined>(undefined)
