@@ -1,0 +1,72 @@
+/* card.css */
+
+.card-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3f4f6; /* Light gray */
+  }
+  
+  .background-image {
+    position: relative;
+    height: 40vh;
+    width: 100%;
+  }
+  
+  .cards-wrapper {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .card {
+    width: 18rem;
+    background: linear-gradient(to right, #065f46, #1e3a8a, #065f46); /* Gradient background */
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card-image {
+    width: 100%;
+    max-width: 12rem;
+    height: auto;
+    border-radius: 9999px;
+    transition: transform 0.7s ease;
+  }
+  
+  .card-image:hover {
+    transform: scale(1.25);
+  }
+  
+  .card-title {
+    color: black;
+    font-weight: 800;
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    transition: color 0.3s ease, transform 0.5s ease;
+  }
+  
+  .card-title:hover {
+    color: #065f46; /* Green on hover */
+    transform: translateX(0.5rem);
+  }
+  
