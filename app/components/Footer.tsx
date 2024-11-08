@@ -13,7 +13,7 @@ const Footer = () => {
                 </div>
 
                 <ul className='flex flex-col sm:flex-row gap-6 mb-4 sm:gap-8  items-center justify-center font-bold text-blue-900'>
-                {["Home", "Products", "Contact", "Services"].map((item) => (
+                {["Home", "Contact", "Services"].map((item) => (
                     <li key={item}>
                         <Link 
                             href={`/${item === "Home" ? "" : item + "Page"}`}
@@ -28,9 +28,7 @@ const Footer = () => {
                     <div >
                         <Link href='https://www.facebook.com/profile.php?id=61565214891148&mibextid=ZbWKwL'><Image src={"/fb-removebg-preview.png"} alt='Facebook' width={24} height={24} className='hover:scale-110 transition-transform bg-blue-900 rounded-md p-1' /></Link>
                     </div>
-                    <div className="footer-icons-container">
-                       <Link href="+92 320 9236102"><Image src={"/whatsapp_icon.png"} alt='WhatsApp' width={24} height={24} className='hover:scale-110 transition-transform bg-blue-900 rounded-md' /></Link> 
-                    </div>
+                    
                     <div className="footer-icons-container">
                        <Link href="https://www.instagram.com/safe_home_chemicals?igsh=Y3M4am9zdXZhdTR2"><Image src={"/instagram_icon.png"} alt='Instagram' width={24} height={24} className='hover:scale-110 transition-transform bg-blue-900 rounded-md p-1'/></Link>
                     </div>
